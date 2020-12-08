@@ -41,7 +41,7 @@
         <div class="form-group" >
             <input 
                 class="form__input"  
-                type="number"
+                type="text"
                 v-model.trim="addressForm.house" 
             />
             <label class="form__label" :class="{'not-empty': addressForm.house}">Дом</label>

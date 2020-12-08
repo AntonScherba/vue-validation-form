@@ -143,10 +143,17 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    // background: green;
   }
 
   h3 {
       border-bottom: 1px solid black;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .wrapper {
