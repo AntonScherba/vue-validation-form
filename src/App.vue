@@ -143,7 +143,6 @@ export default {
   body {
     margin: 0;
     padding: 0;
-    // background: green;
   }
 
   h3 {
@@ -156,19 +155,25 @@ export default {
     appearance: none;
   }
 
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-width: 300px;
     max-width: 900px;
     margin: 0 auto;
-    align-items: center;
   }
 
   .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 1rem;
     border: 1px dashed grey;
   }
