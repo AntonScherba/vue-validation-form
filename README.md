@@ -1,5 +1,7 @@
 # vue-validation-form
 
+Demo link https://antonscherba.github.io/vue-validation-form/
+
 ## Project setup
 ```
 npm install
