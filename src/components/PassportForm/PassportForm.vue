@@ -29,15 +29,7 @@
             />
             <label class="form__label" :class="{'not-empty': passportForm.number}">Номер</label>
         </div>
-        <!-- Кем выдан -->
-        <div class="form-group">
-            <input 
-                class="form__input"  
-                type="text"
-                v-model.trim="passportForm.issued" 
-            />
-            <label class="form__label" :class="{'not-empty': passportForm.issued}">Кем выдан</label>
-        </div>
+
         <!-- Код подразделения -->
         <div class="form-group">
             <input 
@@ -57,6 +49,15 @@
             <label class="form__label" :class="{'not-empty': v.passportForm.dateIssue.$model}">Дата выдачи</label>
         <div class="error">Поле обязательное для заполнения</div>
         
+        </div>
+                <!-- Кем выдан -->
+        <div class="form-group">
+            <input 
+                class="form__input"  
+                type="text"
+                v-model.trim="passportForm.issued" 
+            />
+            <label class="form__label" :class="{'not-empty': passportForm.issued}">Кем выдан</label>
         </div>
     </div>
 </template>

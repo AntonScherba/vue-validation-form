@@ -155,12 +155,6 @@ export default {
     appearance: none;
   }
 
-  input[type="date"]::-webkit-inner-spin-button,
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url(https://stackoverflow.com/favicon.ico) no-repeat;
-    -webkit-appearance: none;
-}
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -203,30 +197,34 @@ export default {
     pointer-events: none;
     background-color: white;
   }
-  .not-empty {
+
+  %not-empty {
     position: absolute;
     left: 0;
     top: 0;
     font-size: 12px;
   }
-  .error {
-    font-size: 12px;
-    pointer-events: none;
-    margin-top: 2px;
-  } 
+  .not-empty {
+    @extend %not-empty;
+  }
 
   .form__input:focus ~.form__label {
-    position: absolute;
-    left: 0;
-    top: 0;
+    @extend %not-empty;
     transition: all .2s ease;
-    font-size: 12px;
   }
 
-  .message {
+  %message {
     font-size: 12px;
     pointer-events: none;
     margin-top: 2px;
+  }  
+
+  .error {
+    @extend %message;
+  } 
+
+  .message {
+    @extend %message;
   }
 
   .btn-submit {
@@ -236,7 +234,6 @@ export default {
   }
 
   .form-group--error {
-    
     .form__input {
       border-bottom: 1px solid $error; 
     }
