@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:AntonScherba/vue-simon.git master:gh-pages
+git push -f git@github.com:AntonScherba/vue-validation-form.git master:gh-pages
 
 cd -
