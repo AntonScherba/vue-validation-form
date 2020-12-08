@@ -157,9 +157,9 @@ export default {
 
   input[type="date"]::-webkit-inner-spin-button,
   input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
+    background: url(https://stackoverflow.com/favicon.ico) no-repeat;
     -webkit-appearance: none;
-  }
+}
 
   .wrapper {
     display: flex;
